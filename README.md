@@ -1,12 +1,10 @@
 
-0. Create candidate set
-===
+## 0. Create candidate set
 We use Pindel, SVseq2, BreakDancer and DELLY to get raw callset and merge it as candidates.
 
 Per line of deletions: chromosom, start, end+1
 	
-1. Feature collection
-===
+## 1. Feature collection
 
 #### 1.1 Usage
 - Need bai for each bam file, and samtools in `$PATH`
@@ -14,8 +12,7 @@ Per line of deletions: chromosom, start, end+1
 - Output format: feature1, feature2.......
 - For example: `./Concod -e 0.5 -m 1000 -b test.list`
 
-2. Training and Prediction
-===
+## 2. Training and Prediction
 We use [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/) for training and testing SVM model.
 
 #### 2.1 __Training__
